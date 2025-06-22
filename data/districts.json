@@ -1,0 +1,882 @@
+{
+  "districts": [
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "state": "Maharashtra",
+      "capital": "Mumbai",
+      "region": "West",
+      "population": 12478447,
+      "area": 603.4,
+      "description": "The financial capital of India, known for its bustling city life, Bollywood, and the Gateway of India.",
+      "famous_for": ["Gateway of India", "Marine Drive", "Bollywood", "Elephanta Caves"],
+      "best_time": "October to March",
+      "languages": ["Marathi", "Hindi", "English"],
+      "cuisine": ["Vada Pav", "Pav Bhaji", "Bombay Duck", "Seafood"],
+      "image": "images/districts/mumbai.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Mumbai.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "pune",
+      "name": "Pune",
+      "state": "Maharashtra",
+      "capital": "Pune",
+      "region": "West",
+      "population": 3124458,
+      "area": 331.26,
+      "description": "The cultural capital of Maharashtra, known for its educational institutions and historical forts.",
+      "famous_for": ["Shaniwar Wada", "Aga Khan Palace", "Sinhagad Fort", "Osho Ashram"],
+      "best_time": "October to March",
+      "languages": ["Marathi", "Hindi", "English"],
+      "cuisine": ["Misal Pav", "Puran Poli", "Bharli Vangi", "Pithla Bhakri"],
+      "image": "images/districts/pune.jpg",
+      "places": [
+        {"name": "Amaravati Stupa", "description": "Ancient Buddhist monument.", "image": "images/places/amaravati_stupa.jpg"},
+        {"name": "Uppalapadu Bird Sanctuary", "description": "Sanctuary for migratory birds.", "image": "images/places/uppalapadu.jpg"}
+      ]
+    },
+    {
+      "id": "bangalore",
+      "name": "Bangalore",
+      "state": "Karnataka",
+      "capital": "Bangalore",
+      "region": "South",
+      "population": 8443675,
+      "area": 741,
+      "description": "The Silicon Valley of India, known for its pleasant weather, IT industry, and beautiful gardens.",
+      "famous_for": ["Lalbagh Botanical Garden", "Cubbon Park", "Bangalore Palace", "IT Industry"],
+      "best_time": "October to March",
+      "languages": ["Kannada", "English", "Hindi", "Tamil"],
+      "cuisine": ["Masala Dosa", "Idli Vada", "Bisi Bele Bath", "Ragi Mudde"],
+      "image": "images/districts/bangalore.jpg",
+      "places": [
+        {"name": "Kamakhya Temple", "description": "Famous Hindu temple.", "image": "images/places/kamakhya_temple.jpg"},
+        {"name": "Umananda Island", "description": "River island with a temple.", "image": "images/places/umananda.jpg"}
+      ]
+    },
+    {
+      "id": "mysore",
+      "name": "Mysore",
+      "state": "Karnataka",
+      "capital": "Mysore",
+      "region": "South",
+      "population": 920550,
+      "area": 128.42,
+      "description": "The cultural capital of Karnataka, famous for its royal heritage and magnificent palaces.",
+      "famous_for": ["Mysore Palace", "Chamundi Hills", "Brindavan Gardens", "Mysore Zoo"],
+      "best_time": "October to March",
+      "languages": ["Kannada", "English", "Hindi"],
+      "cuisine": ["Mysore Pak", "Mysore Masala Dosa", "Bisi Bele Bath", "Mysore Rasam"],
+      "image": "images/districts/mysore.jpg",
+      "places": [
+        {"name": "Tawang Monastery", "description": "Largest monastery in India.", "image": "images/places/tawang_monastery.jpg"},
+        {"name": "Sela Pass", "description": "Scenic mountain pass.", "image": "images/places/sela_pass.jpg"}
+      ]
+    },
+    {
+      "id": "chennai",
+      "name": "Chennai",
+      "state": "Tamil Nadu",
+      "capital": "Chennai",
+      "region": "South",
+      "population": 7088000,
+      "area": 426,
+      "description": "The capital of Tamil Nadu, known for its rich culture, classical music, and beautiful beaches.",
+      "famous_for": ["Marina Beach", "Kapaleeshwarar Temple", "Fort St. George", "Classical Music"],
+      "best_time": "November to March",
+      "languages": ["Tamil", "English", "Telugu"],
+      "cuisine": ["Idli Sambar", "Dosa", "Pongal", "Filter Coffee"],
+      "image": "images/districts/chennai.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Chennai.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "coimbatore",
+      "name": "Coimbatore",
+      "state": "Tamil Nadu",
+      "capital": "Coimbatore",
+      "region": "South",
+      "population": 2138584,
+      "area": 246.75,
+      "description": "The Manchester of South India, known for its textile industry and educational institutions.",
+      "famous_for": ["Marudhamalai Temple", "Siruvani Waterfalls", "Textile Industry", "Educational Hub"],
+      "best_time": "October to March",
+      "languages": ["Tamil", "English", "Malayalam"],
+      "cuisine": ["Kongunadu Cuisine", "Poriyal", "Rasam", "Payasam"],
+      "image": "images/districts/coimbatore.jpg",
+      "places": [
+        {"name": "Ganga Lake", "description": "A serene lake surrounded by forest.", "image": "images/places/ganga_lake.jpg"},
+        {"name": "Ita Fort", "description": "Historical fort in Coimbatore.", "image": "images/places/ita_fort.jpg"}
+      ]
+    },
+    {
+      "id": "thiruvananthapuram",
+      "name": "Thiruvananthapuram",
+      "state": "Kerala",
+      "capital": "Thiruvananthapuram",
+      "region": "South",
+      "population": 957730,
+      "area": 214.86,
+      "description": "The capital of Kerala, known for its beautiful beaches, backwaters, and rich cultural heritage.",
+      "famous_for": ["Kovalam Beach", "Padmanabhaswamy Temple", "Napier Museum", "Backwaters"],
+      "best_time": "October to March",
+      "languages": ["Malayalam", "English", "Tamil"],
+      "cuisine": ["Kerala Fish Curry", "Appam", "Puttu", "Malabar Biryani"],
+      "image": "images/districts/thiruvananthapuram.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Thiruvananthapuram.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "kochi",
+      "name": "Kochi",
+      "state": "Kerala",
+      "capital": "Kochi",
+      "region": "South",
+      "population": 677381,
+      "area": 94.88,
+      "description": "The Queen of the Arabian Sea, known for its historic port, Chinese fishing nets, and spice trade.",
+      "famous_for": ["Chinese Fishing Nets", "Fort Kochi", "Jewish Synagogue", "Spice Trade"],
+      "best_time": "October to March",
+      "languages": ["Malayalam", "English", "Hindi"],
+      "cuisine": ["Kerala Seafood", "Appam with Stew", "Malabar Parotta", "Fish Molee"],
+      "image": "images/districts/kochi.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Kochi.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "jaipur",
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "capital": "Jaipur",
+      "region": "North",
+      "population": 3073350,
+      "area": 467,
+      "description": "The Pink City, known for its magnificent palaces, forts, and rich Rajput heritage.",
+      "famous_for": ["Hawa Mahal", "Amber Fort", "City Palace", "Jantar Mantar"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "Rajasthani", "English"],
+      "cuisine": ["Dal Baati Churma", "Ghewar", "Laal Maas", "Pyaaz Kachori"],
+      "image": "images/districts/jaipur.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Jaipur.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "jaisalmer",
+      "name": "Jaisalmer",
+      "state": "Rajasthan",
+      "capital": "Jaisalmer",
+      "region": "North",
+      "population": 669919,
+      "area": 32191,
+      "description": "The Golden City, famous for its magnificent fort rising from the Thar Desert.",
+      "famous_for": ["Jaisalmer Fort", "Thar Desert", "Camel Safari", "Sand Dunes"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "Rajasthani", "English"],
+      "cuisine": ["Ker Sangri", "Gatte ki Sabzi", "Bajre ki Roti", "Mangodi"],
+      "image": "images/districts/jaisalmer.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Jaisalmer.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "varanasi",
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "capital": "Varanasi",
+      "region": "North",
+      "population": 1198491,
+      "area": 82.1,
+      "description": "The spiritual capital of India, one of the oldest continuously inhabited cities in the world.",
+      "famous_for": ["Kashi Vishwanath Temple", "Ganga Ghats", "Sarnath", "Spiritual Tourism"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "Bhojpuri", "English"],
+      "cuisine": ["Banarasi Paan", "Kachori Sabzi", "Malaiyo", "Thandai"],
+      "image": "images/districts/varanasi.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Varanasi.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "agra",
+      "name": "Agra",
+      "state": "Uttar Pradesh",
+      "capital": "Agra",
+      "region": "North",
+      "population": 1585704,
+      "area": 188.4,
+      "description": "Home to the iconic Taj Mahal, one of the Seven Wonders of the World.",
+      "famous_for": ["Taj Mahal", "Agra Fort", "Fatehpur Sikri", "Mughal Architecture"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Urdu"],
+      "cuisine": ["Agra Petha", "Mughlai Cuisine", "Bedai", "Dalmoth"],
+      "image": "images/districts/agra.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Agra.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "kolkata",
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "capital": "Kolkata",
+      "region": "East",
+      "population": 4486679,
+      "area": 185,
+      "description": "The City of Joy, known for its rich cultural heritage, literature, and delicious food.",
+      "famous_for": ["Victoria Memorial", "Howrah Bridge", "Dakshineswar Temple", "Durga Puja"],
+      "best_time": "October to March",
+      "languages": ["Bengali", "Hindi", "English"],
+      "cuisine": ["Roshogolla", "Macher Jhol", "Luchi Aloor Dom", "Kathi Rolls"],
+      "image": "images/districts/kolkata.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Kolkata.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "darjeeling",
+      "name": "Darjeeling",
+      "state": "West Bengal",
+      "capital": "Darjeeling",
+      "region": "East",
+      "population": 132016,
+      "area": 10.57,
+      "description": "The Queen of Hills, famous for its tea gardens, toy train, and stunning Himalayan views.",
+      "famous_for": ["Darjeeling Tea", "Toy Train", "Tiger Hill", "Tea Gardens"],
+      "best_time": "March to May, October to December",
+      "languages": ["Nepali", "Bengali", "English", "Hindi"],
+      "cuisine": ["Momos", "Thukpa", "Tea", "Tibetan Cuisine"],
+      "image": "images/districts/darjeeling.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Darjeeling.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "ahmedabad",
+      "name": "Ahmedabad",
+      "state": "Gujarat",
+      "capital": "Ahmedabad",
+      "region": "West",
+      "population": 5570585,
+      "area": 464.16,
+      "description": "The Manchester of India, known for its textile industry, heritage sites, and vibrant culture.",
+      "famous_for": ["Sabarmati Ashram", "Adalaj Stepwell", "Kankaria Lake", "Textile Industry"],
+      "best_time": "October to March",
+      "languages": ["Gujarati", "Hindi", "English"],
+      "cuisine": ["Dhokla", "Khandvi", "Gujarati Thali", "Fafda"],
+      "image": "images/districts/ahmedabad.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Ahmedabad.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "surat",
+      "name": "Surat",
+      "state": "Gujarat",
+      "capital": "Surat",
+      "region": "West",
+      "population": 4467797,
+      "area": 326.515,
+      "description": "The Diamond City, known for its diamond cutting and polishing industry.",
+      "famous_for": ["Diamond Industry", "Textile Industry", "Surat Castle", "Dumas Beach"],
+      "best_time": "October to March",
+      "languages": ["Gujarati", "Hindi", "English"],
+      "cuisine": ["Surati Ghari", "Locho", "Undhiyu", "Khaman"],
+      "image": "images/districts/surat.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Surat.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "hyderabad",
+      "name": "Hyderabad",
+      "state": "Telangana",
+      "capital": "Hyderabad",
+      "region": "South",
+      "population": 6993262,
+      "area": 650,
+      "description": "The City of Pearls, known for its rich history, IT industry, and delicious biryani.",
+      "famous_for": ["Charminar", "Golconda Fort", "Hussain Sagar", "IT Industry"],
+      "best_time": "October to March",
+      "languages": ["Telugu", "Urdu", "Hindi", "English"],
+      "cuisine": ["Hyderabadi Biryani", "Haleem", "Double Ka Meetha", "Mirchi ka Salan"],
+      "image": "images/districts/hyderabad.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Hyderabad.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "warangal",
+      "name": "Warangal",
+      "state": "Telangana",
+      "capital": "Warangal",
+      "region": "South",
+      "population": 811844,
+      "area": 128.84,
+      "description": "A historic city known for its ancient temples and rich cultural heritage.",
+      "famous_for": ["Warangal Fort", "Thousand Pillar Temple", "Bhadrakali Temple", "Kakatiya Dynasty"],
+      "best_time": "October to March",
+      "languages": ["Telugu", "Urdu", "Hindi"],
+      "cuisine": ["Telangana Cuisine", "Pesarattu", "Gongura Pachadi", "Sakinalu"],
+      "image": "images/districts/warangal.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Warangal.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "bhopal",
+      "name": "Bhopal",
+      "state": "Madhya Pradesh",
+      "capital": "Bhopal",
+      "region": "Central",
+      "population": 1798218,
+      "area": 285.88,
+      "description": "The City of Lakes, known for its beautiful lakes, mosques, and rich history.",
+      "famous_for": ["Upper Lake", "Taj-ul-Masajid", "Van Vihar", "Bharat Bhavan"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Urdu"],
+      "cuisine": ["Bhopali Gosht Korma", "Bhopali Paan", "Seekh Kebab", "Bhopali Biryani"],
+      "image": "images/districts/bhopal.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Bhopal.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "indore",
+      "name": "Indore",
+      "state": "Madhya Pradesh",
+      "capital": "Indore",
+      "region": "Central",
+      "population": 1994397,
+      "area": 389.8,
+      "description": "The Cleanest City in India, known for its food culture and educational institutions.",
+      "famous_for": ["Rajwada Palace", "Lal Bagh Palace", "Food Culture", "Educational Hub"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Marathi"],
+      "cuisine": ["Poha Jalebi", "Indori Namkeen", "Bhutte ka Kees", "Sabudana Khichdi"],
+      "image": "images/districts/indore.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Indore.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "patna",
+      "name": "Patna",
+      "state": "Bihar",
+      "capital": "Patna",
+      "region": "East",
+      "population": 2046652,
+      "area": 99.45,
+      "description": "The capital of Bihar, one of the oldest continuously inhabited cities in the world.",
+      "famous_for": ["Golghar", "Patna Museum", "Mahavir Mandir", "Ancient History"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "Bhojpuri", "English"],
+      "cuisine": ["Litti Chokha", "Sattu Paratha", "Khaja", "Thekua"],
+      "image": "images/districts/patna.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Patna.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "gaya",
+      "name": "Gaya",
+      "state": "Bihar",
+      "capital": "Gaya",
+      "region": "East",
+      "population": 463454,
+      "area": 50.17,
+      "description": "A sacred city for Hindus and Buddhists, known for its religious significance.",
+      "famous_for": ["Mahabodhi Temple", "Vishnupad Temple", "Bodh Gaya", "Pind Daan"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "Bhojpuri", "English"],
+      "cuisine": ["Bihari Cuisine", "Litti Chokha", "Sattu", "Khaja"],
+      "image": "images/districts/gaya.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Gaya.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "bhubaneswar",
+      "name": "Bhubaneswar",
+      "state": "Odisha",
+      "capital": "Bhubaneswar",
+      "region": "East",
+      "population": 837737,
+      "area": 135,
+      "description": "The Temple City of India, known for its ancient temples and rich cultural heritage.",
+      "famous_for": ["Lingaraj Temple", "Mukteshwar Temple", "Khandagiri Caves", "Temple Architecture"],
+      "best_time": "October to March",
+      "languages": ["Odia", "Hindi", "English"],
+      "cuisine": ["Pakhala", "Dalma", "Chungdi Malai", "Rasagola"],
+      "image": "images/districts/bhubaneswar.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Bhubaneswar.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "puri",
+      "name": "Puri",
+      "state": "Odisha",
+      "capital": "Puri",
+      "region": "East",
+      "population": 201026,
+      "area": 16.84,
+      "description": "A sacred city known for the Jagannath Temple and beautiful beaches.",
+      "famous_for": ["Jagannath Temple", "Puri Beach", "Konark Sun Temple", "Rath Yatra"],
+      "best_time": "October to March",
+      "languages": ["Odia", "Hindi", "English"],
+      "cuisine": ["Mahaprasad", "Puri Bhaji", "Chungdi Malai", "Rasagola"],
+      "image": "images/districts/puri.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Puri.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "guwahati",
+      "name": "Guwahati",
+      "state": "Assam",
+      "capital": "Guwahati",
+      "region": "Northeast",
+      "population": 957352,
+      "area": 216,
+      "description": "The Gateway to Northeast India, known for its tea gardens and cultural diversity.",
+      "famous_for": ["Kamakhya Temple", "Uzan Bazar", "Fancy Bazar", "Tea Gardens"],
+      "best_time": "October to March",
+      "languages": ["Assamese", "Bengali", "Hindi", "English"],
+      "cuisine": ["Assamese Thali", "Masor Tenga", "Pitha", "Jolpan"],
+      "image": "images/districts/guwahati.jpg",
+      "places": [
+        {"name": "Kamakhya Temple", "description": "Famous Hindu temple.", "image": "images/places/kamakhya_temple.jpg"},
+        {"name": "Umananda Island", "description": "River island with a temple.", "image": "images/places/umananda.jpg"}
+      ]
+    },
+    {
+      "id": "jorhat",
+      "name": "Jorhat",
+      "state": "Assam",
+      "capital": "Jorhat",
+      "region": "Northeast",
+      "population": 153889,
+      "area": 53.5,
+      "description": "The Cultural Capital of Assam, known for its tea gardens and cultural heritage.",
+      "famous_for": ["Tea Gardens", "Cultural Heritage", "Jorhat Gymkhana Club", "Assam Agricultural University"],
+      "best_time": "October to March",
+      "languages": ["Assamese", "Bengali", "Hindi", "English"],
+      "cuisine": ["Assamese Cuisine", "Tea", "Pitha", "Jolpan"],
+      "image": "images/districts/jorhat.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Jorhat.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "chandigarh",
+      "name": "Chandigarh",
+      "state": "Punjab",
+      "capital": "Chandigarh",
+      "region": "North",
+      "population": 1055450,
+      "area": 114,
+      "description": "The first planned city of India, known for its modern architecture and beautiful gardens.",
+      "famous_for": ["Rock Garden", "Sukhna Lake", "Rose Garden", "Modern Architecture"],
+      "best_time": "October to March",
+      "languages": ["Punjabi", "Hindi", "English"],
+      "cuisine": ["Butter Chicken", "Amritsari Fish", "Makki di Roti", "Sarson da Saag"],
+      "image": "images/districts/chandigarh.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Chandigarh.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "amritsar",
+      "name": "Amritsar",
+      "state": "Punjab",
+      "capital": "Amritsar",
+      "region": "North",
+      "population": 1132383,
+      "area": 170,
+      "description": "The Holy City of the Sikhs, home to the Golden Temple and rich Sikh heritage.",
+      "famous_for": ["Golden Temple", "Wagah Border", "Jallianwala Bagh", "Sikh Heritage"],
+      "best_time": "October to March",
+      "languages": ["Punjabi", "Hindi", "English"],
+      "cuisine": ["Amritsari Kulcha", "Butter Chicken", "Langar", "Punjabi Cuisine"],
+      "image": "images/districts/amritsar.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Amritsar.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "gurgaon",
+      "name": "Gurgaon",
+      "state": "Haryana",
+      "capital": "Gurgaon",
+      "region": "North",
+      "population": 876824,
+      "area": 232.66,
+      "description": "The Millennium City, known for its IT industry and modern infrastructure.",
+      "famous_for": ["Cyber City", "IT Industry", "Shopping Malls", "Modern Infrastructure"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Haryanvi"],
+      "cuisine": ["Haryanvi Cuisine", "Bajre ki Roti", "Singri ki Sabzi", "Hara Dhania Cholia"],
+      "image": "images/districts/gurgaon.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Gurgaon.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "faridabad",
+      "name": "Faridabad",
+      "state": "Haryana",
+      "capital": "Faridabad",
+      "region": "North",
+      "population": 1414050,
+      "area": 215.12,
+      "description": "The largest city in Haryana, known for its industrial development and modern lifestyle.",
+      "famous_for": ["Industrial Hub", "Modern Development", "Shopping Centers", "Educational Institutions"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Haryanvi"],
+      "cuisine": ["Haryanvi Cuisine", "Bajre ki Roti", "Singri ki Sabzi", "Hara Dhania Cholia"],
+      "image": "images/districts/faridabad.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Faridabad.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "shimla",
+      "name": "Shimla",
+      "state": "Himachal Pradesh",
+      "capital": "Shimla",
+      "region": "North",
+      "population": 169578,
+      "area": 35.34,
+      "description": "The Queen of Hills, a popular hill station known for its colonial architecture and scenic beauty.",
+      "famous_for": ["The Ridge", "Mall Road", "Christ Church", "Toy Train"],
+      "best_time": "March to June, October to December",
+      "languages": ["Hindi", "English", "Pahari"],
+      "cuisine": ["Himachali Cuisine", "Siddu", "Babru", "Aktori"],
+      "image": "images/districts/shimla.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Shimla.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "manali",
+      "name": "Manali",
+      "state": "Himachal Pradesh",
+      "capital": "Manali",
+      "region": "North",
+      "population": 8096,
+      "area": 6.65,
+      "description": "A popular hill station known for its adventure sports, scenic beauty, and apple orchards.",
+      "famous_for": ["Solang Valley", "Hadimba Temple", "Rohtang Pass", "Adventure Sports"],
+      "best_time": "March to June, October to December",
+      "languages": ["Hindi", "English", "Pahari"],
+      "cuisine": ["Himachali Cuisine", "Siddu", "Babru", "Aktori"],
+      "image": "images/districts/manali.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Manali.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "dehradun",
+      "name": "Dehradun",
+      "state": "Uttarakhand",
+      "capital": "Dehradun",
+      "region": "North",
+      "population": 578420,
+      "area": 3088,
+      "description": "The capital of Uttarakhand, known for its educational institutions and scenic beauty.",
+      "famous_for": ["Forest Research Institute", "Robber's Cave", "Mindrolling Monastery", "Educational Hub"],
+      "best_time": "March to June, September to November",
+      "languages": ["Hindi", "English", "Garhwali"],
+      "cuisine": ["Garhwali Cuisine", "Kafuli", "Chainsoo", "Bhatt ki Churdkani"],
+      "image": "images/districts/dehradun.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Dehradun.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "rishikesh",
+      "name": "Rishikesh",
+      "state": "Uttarakhand",
+      "capital": "Rishikesh",
+      "region": "North",
+      "population": 102138,
+      "area": 11.5,
+      "description": "The Yoga Capital of the World, known for its spiritual significance and adventure sports.",
+      "famous_for": ["Yoga Centers", "Adventure Sports", "Laxman Jhula", "Ram Jhula"],
+      "best_time": "March to June, September to November",
+      "languages": ["Hindi", "English", "Garhwali"],
+      "cuisine": ["Garhwali Cuisine", "Kafuli", "Chainsoo", "Bhatt ki Churdkani"],
+      "image": "images/districts/rishikesh.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Rishikesh.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "ranchi",
+      "name": "Ranchi",
+      "state": "Jharkhand",
+      "capital": "Ranchi",
+      "region": "East",
+      "population": 1073440,
+      "area": 175.12,
+      "description": "The capital of Jharkhand, known for its waterfalls and tribal culture.",
+      "famous_for": ["Hundru Falls", "Jonha Falls", "Dassam Falls", "Tribal Culture"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Nagpuri"],
+      "cuisine": ["Jharkhandi Cuisine", "Dhuska", "Rugda", "Pitha"],
+      "image": "images/districts/ranchi.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Ranchi.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "jamshedpur",
+      "name": "Jamshedpur",
+      "state": "Jharkhand",
+      "capital": "Jamshedpur",
+      "region": "East",
+      "population": 629399,
+      "area": 149.23,
+      "description": "The Steel City of India, known for its industrial development and planned city layout.",
+      "famous_for": ["Tata Steel", "Jubilee Park", "Dimna Lake", "Industrial Hub"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Bengali"],
+      "cuisine": ["Jharkhandi Cuisine", "Dhuska", "Rugda", "Pitha"],
+      "image": "images/districts/jamshedpur.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Jamshedpur.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "raipur",
+      "name": "Raipur",
+      "state": "Chhattisgarh",
+      "capital": "Raipur",
+      "region": "Central",
+      "population": 1010087,
+      "area": 226,
+      "description": "The capital of Chhattisgarh, known for its rich tribal culture and natural resources.",
+      "famous_for": ["Tribal Culture", "Natural Resources", "Educational Hub", "Modern Development"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Chhattisgarhi"],
+      "cuisine": ["Chhattisgarhi Cuisine", "Bafauri", "Chila", "Muthia"],
+      "image": "images/districts/raipur.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Raipur.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "bilaspur",
+      "name": "Bilaspur",
+      "state": "Chhattisgarh",
+      "capital": "Bilaspur",
+      "region": "Central",
+      "population": 197575,
+      "area": 287,
+      "description": "Known for its rice production and cultural heritage.",
+      "famous_for": ["Rice Bowl of Chhattisgarh", "Cultural Heritage", "Educational Institutions", "Traditional Arts"],
+      "best_time": "October to March",
+      "languages": ["Hindi", "English", "Chhattisgarhi"],
+      "cuisine": ["Chhattisgarhi Cuisine", "Bafauri", "Chila", "Muthia"],
+      "image": "images/districts/bilaspur.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Bilaspur.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "panaji",
+      "name": "Panaji",
+      "state": "Goa",
+      "capital": "Panaji",
+      "region": "West",
+      "population": 114405,
+      "area": 36.96,
+      "description": "The capital of Goa, known for its Portuguese heritage and beautiful churches.",
+      "famous_for": ["Church Square", "Adil Shah Palace", "Dona Paula", "Portuguese Heritage"],
+      "best_time": "November to March",
+      "languages": ["Konkani", "English", "Hindi", "Portuguese"],
+      "cuisine": ["Goan Fish Curry", "Vindaloo", "Bebinca", "Feni"],
+      "image": "images/districts/panaji.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Panaji.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "margao",
+      "name": "Margao",
+      "state": "Goa",
+      "capital": "Margao",
+      "region": "West",
+      "population": 87450,
+      "area": 15.95,
+      "description": "The commercial capital of Goa, known for its markets and cultural heritage.",
+      "famous_for": ["Colva Beach", "Church of the Holy Spirit", "Commercial Hub", "Cultural Heritage"],
+      "best_time": "November to March",
+      "languages": ["Konkani", "English", "Hindi", "Portuguese"],
+      "cuisine": ["Goan Cuisine", "Fish Curry", "Vindaloo", "Bebinca"],
+      "image": "images/districts/margao.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Margao.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "imphal",
+      "name": "Imphal",
+      "state": "Manipur",
+      "capital": "Imphal",
+      "region": "Northeast",
+      "population": 264986,
+      "area": 34.36,
+      "description": "The capital of Manipur, known for its rich culture and natural beauty.",
+      "famous_for": ["Loktak Lake", "Kangla Fort", "Manipur State Museum", "Cultural Heritage"],
+      "best_time": "October to March",
+      "languages": ["Manipuri", "English", "Hindi"],
+      "cuisine": ["Manipuri Cuisine", "Eromba", "Singju", "Chamthong"],
+      "image": "images/districts/imphal.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Imphal.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "shillong",
+      "name": "Shillong",
+      "state": "Meghalaya",
+      "capital": "Shillong",
+      "region": "Northeast",
+      "population": 143229,
+      "area": 64.36,
+      "description": "The Scotland of the East, known for its scenic beauty and pleasant weather.",
+      "famous_for": ["Elephant Falls", "Shillong Peak", "Ward's Lake", "Golf Course"],
+      "best_time": "March to June, September to December",
+      "languages": ["Khasi", "English", "Hindi"],
+      "cuisine": ["Khasi Cuisine", "Jadoh", "Doh Khleh", "Pumaloi"],
+      "image": "images/districts/shillong.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Shillong.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "kohima",
+      "name": "Kohima",
+      "state": "Nagaland",
+      "capital": "Kohima",
+      "region": "Northeast",
+      "population": 99039,
+      "area": 20,
+      "description": "The capital of Nagaland, known for its tribal culture and World War II history.",
+      "famous_for": ["Kohima War Cemetery", "Naga Heritage Village", "Tribal Culture", "Hornbill Festival"],
+      "best_time": "October to March",
+      "languages": ["English", "Nagamese", "Hindi"],
+      "cuisine": ["Naga Cuisine", "Axone", "Bamboo Shoot Curry", "Smoked Pork"],
+      "image": "images/districts/kohima.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Kohima.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "agartala",
+      "name": "Agartala",
+      "state": "Tripura",
+      "capital": "Agartala",
+      "region": "Northeast",
+      "population": 400004,
+      "area": 76.504,
+      "description": "The capital of Tripura, known for its royal heritage and cultural diversity.",
+      "famous_for": ["Ujjayanta Palace", "Neermahal", "Tripura State Museum", "Royal Heritage"],
+      "best_time": "October to March",
+      "languages": ["Bengali", "Kokborok", "English", "Hindi"],
+      "cuisine": ["Tripuri Cuisine", "Bamboo Shoot Curry", "Fish Curry", "Berma"],
+      "image": "images/districts/agartala.jpg",
+      "places": [
+        {"name": "RK Beach", "description": "A popular beach in Agartala.", "image": "images/places/rk_beach.jpg"},
+        {"name": "Kailasagiri", "description": "A hilltop park with scenic views.", "image": "images/places/kailasagiri.jpg"}
+      ]
+    },
+    {
+      "id": "itanagar",
+      "name": "Itanagar",
+      "state": "Arunachal Pradesh",
+      "capital": "Itanagar",
+      "region": "Northeast",
+      "population": 59490,
+      "area": 20.94,
+      "description": "The capital of Arunachal Pradesh, known for its tribal culture and natural beauty.",
+      "famous_for": ["Ita Fort", "Ganga Lake", "Jawaharlal Nehru Museum", "Tribal Culture"],
+      "best_time": "October to March",
+      "languages": ["English", "Hindi", "Nyishi"],
+      "cuisine": ["Arunachali Cuisine", "Bamboo Rice", "Apong", "Pika Pila"]
+    },
+    {
+      "id": "aizawl",
+      "name": "Aizawl",
+      "state": "Mizoram",
+      "capital": "Aizawl",
+      "region": "Northeast",
+      "population": 293416,
+      "area": 457,
+      "description": "The capital of Mizoram, known for its scenic beauty and Christian culture.",
+      "famous_for": ["Durtlang Hills", "Mizoram State Museum", "Christian Culture", "Scenic Beauty"],
+      "best_time": "October to March",
+      "languages": ["Mizo", "English", "Hindi"],
+      "cuisine": ["Mizo Cuisine", "Bai", "Vawksa Rep", "Sawhchiar"]
+    },
+    {
+      "id": "gangtok",
+      "name": "Gangtok",
+      "state": "Sikkim",
+      "capital": "Gangtok",
+      "region": "Northeast",
+      "population": 100286,
+      "area": 19.2,
+      "description": "The capital of Sikkim, known for its Buddhist culture and scenic beauty.",
+      "famous_for": ["Rumtek Monastery", "MG Marg", "Tsomgo Lake", "Buddhist Culture"],
+      "best_time": "March to June, October to December",
+      "languages": ["Nepali", "English", "Hindi", "Bhutia"],
+      "cuisine": ["Sikkimese Cuisine", "Thukpa", "Momos", "Gundruk"]
+    }
+  ]
+} 

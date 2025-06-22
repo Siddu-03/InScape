@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Inscape - Discover India's Hidden Gems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Project Inscape</h2>
+                <span class="logo-subtitle">Discover India's Soul</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="map.html" class="nav-link">Map</a></li>
+                <li><a href="state.html" class="nav-link">Destinations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover India's Hidden Gems</h1>
+            <p class="hero-subtitle">Explore the rich tapestry of Indian culture, from ancient temples to pristine beaches, down to every district</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Search for a state or district...">
+                        <button type="submit" class="search-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-results"></div>
+                </form>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured States Section -->
+    <section class="featured-states-section">
+        <div class="container">
+            <h2 class="section-title">Featured States</h2>
+            <p class="section-subtitle">Explore the diverse states of India</p>
+            <div class="featured-states"></div>
+        </div>
+    </section>
+
+    <!-- Popular Places Section -->
+    <section class="popular-places-section">
+        <div class="container">
+            <h2 class="section-title">Popular Places</h2>
+            <p class="section-subtitle">Handpicked destinations loved by travelers</p>
+            <div class="popular-places"></div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <p class="section-subtitle">Handpicked places that showcase India's incredible diversity</p>
+            
+            <div class="featured-grid">
+                <div class="featured-card" data-district="varanasi">
+                    <div class="card-image">
+                        <img src="images/places/varanasi.jpg" alt="Varanasi Ghats" onerror="this.src='images/placeholder.jpg'">
+                        <div class="card-overlay">
+                            <span class="card-tag">Spiritual</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Varanasi, Uttar Pradesh</h3>
+                        <p>The spiritual capital of India, where ancient traditions meet the sacred Ganges</p>
+                        <a href="state.html?state=26&district=45" class="card-btn">Explore</a>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-district="kerala-backwaters">
+                    <div class="card-image">
+                        <img src="images/places/kerala.jpg" alt="Kerala Backwaters" onerror="this.src='images/placeholder.jpg'">
+                        <div class="card-overlay">
+                            <span class="card-tag">Nature</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kerala Backwaters</h3>
+                        <p>Serene waterways lined with coconut palms and traditional houseboats</p>
+                        <a href="state.html?state=12&district=25" class="card-btn">Explore</a>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-district="jaisalmer">
+                    <div class="card-image">
+                        <img src="images/places/jaisalmer.jpg" alt="Jaisalmer Fort" onerror="this.src='images/placeholder.jpg'">
+                        <div class="card-overlay">
+                            <span class="card-tag">Heritage</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jaisalmer, Rajasthan</h3>
+                        <p>The Golden City with its magnificent fort rising from the Thar Desert</p>
+                        <a href="state.html?state=21&district=38" class="card-btn">Explore</a>
+                    </div>
+                </div>
+
+                <div class="featured-card" data-district="darjeeling">
+                    <div class="card-image">
+                        <img src="images/places/darjeeling.jpg" alt="Darjeeling Hills" onerror="this.src='images/placeholder.jpg'">
+                        <div class="card-overlay">
+                            <span class="card-tag">Adventure</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Darjeeling, West Bengal</h3>
+                        <p>Misty hills, tea gardens, and the majestic Kanchenjunga views</p>
+                        <a href="state.html?state=28&district=50" class="card-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <h3>Search & Discover</h3>
+                    <p>Find your perfect destination by searching states and districts across India</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-1.447-.894L15 4m0 13V4m-6 3l6-3"></path>
+                        </svg>
+                    </div>
+                    <h3>Explore Details</h3>
+                    <p>Dive deep into local culture, history, food, and hidden gems of each place</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Plan Your Journey</h3>
+                    <p>Get practical information, directions, and tips for an unforgettable experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festivals Carousel -->
+    <section class="festivals-section">
+        <div class="container">
+            <h2 class="section-title">Celebrating Indian Festivals</h2>
+            <div class="festivals-carousel">
+                <div class="festival-card">
+                    <img src="images/festivals/diwali.jpg" alt="Diwali" onerror="this.src='images/placeholder.jpg'">
+                    <div class="festival-content">
+                        <h3>Diwali</h3>
+                        <p>Festival of Lights celebrated across India</p>
+                    </div>
+                </div>
+                <div class="festival-card">
+                    <img src="images/festivals/holi.jpg" alt="Holi" onerror="this.src='images/placeholder.jpg'">
+                    <div class="festival-content">
+                        <h3>Holi</h3>
+                        <p>Colorful spring festival of love and joy</p>
+                    </div>
+                </div>
+                <div class="festival-card">
+                    <img src="images/festivals/onam.jpg" alt="Onam" onerror="this.src='images/placeholder.jpg'">
+                    <div class="festival-content">
+                        <h3>Onam</h3>
+                        <p>Kerala's harvest festival with boat races</p>
+                    </div>
+                </div>
+                <div class="festival-card">
+                    <img src="images/festivals/pongal.jpg" alt="Pongal" onerror="this.src='images/placeholder.jpg'">
+                    <div class="festival-content">
+                        <h3>Pongal</h3>
+                        <p>Tamil Nadu's thanksgiving harvest festival</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Project Inscape</h3>
+                    <p>Discovering India's soul, one district at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="map.html">Interactive Map</a></li>
+                        <li><a href="state.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">North India</a></li>
+                        <li><a href="#">South India</a></li>
+                        <li><a href="#">East India</a></li>
+                        <li><a href="#">West India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Project Inscape. Made with ❤️ for India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html> 

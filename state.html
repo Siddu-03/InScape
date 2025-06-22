@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Project Inscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/state.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Project Inscape</h2>
+                <span class="logo-subtitle">Discover India's Soul</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="map.html" class="nav-link">Map</a></li>
+                <li><a href="state.html" class="nav-link active">Destinations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="map.html">Map</a> / 
+                <span id="currentLocation">Destinations</span>
+            </div>
+            <h1 class="page-title" id="pageTitle">Discover Amazing Places</h1>
+            <p class="page-subtitle" id="pageSubtitle">Explore the rich culture, history, and beauty of India's districts</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="placeTypeFilter">Place Type:</label>
+                    <select id="placeTypeFilter" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="religious">Religious</option>
+                        <option value="historical">Historical</option>
+                        <option value="nature">Nature</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="food">Food & Culture</option>
+                        <option value="beach">Beach</option>
+                        <option value="wildlife">Wildlife</option>
+                        <option value="heritage">Heritage</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sortBy">Sort By:</label>
+                    <select id="sortBy" class="filter-select">
+                        <option value="name">Name</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="rating">Rating</option>
+                        <option value="distance">Distance</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="searchPlaces">Search Places:</label>
+                    <input type="text" id="searchPlaces" class="filter-input" placeholder="Search places...">
+                </div>
+                
+                <button id="clearFilters" class="clear-filters-btn">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Grid -->
+    <section class="places-section">
+        <div class="container">
+            <div class="places-header">
+                <h2 id="placesTitle">Places to Explore</h2>
+                <div class="places-count">
+                    <span id="placesCount">0</span> places found
+                </div>
+            </div>
+            
+            <div id="placesGrid" class="places-grid">
+                <!-- Place cards will be dynamically loaded here -->
+                <div class="loading-placeholder">
+                    <div class="loading-spinner"></div>
+                    <p>Loading amazing places...</p>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="loadMoreBtn" class="load-more-btn" style="display: none;">Load More Places</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Trivia Section -->
+    <section class="trivia-section">
+        <div class="container">
+            <h2 class="section-title">Did You Know?</h2>
+            <div class="trivia-grid">
+                <div class="trivia-card">
+                    <div class="trivia-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"></path>
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                    </div>
+                    <h3>Cultural Heritage</h3>
+                    <p id="culturalTrivia">India is home to over 1.3 billion people speaking more than 1,600 languages and dialects, making it one of the most linguistically diverse countries in the world.</p>
+                </div>
+                
+                <div class="trivia-card">
+                    <div class="trivia-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Historical Wonders</h3>
+                    <p id="historicalTrivia">The ancient city of Varanasi is considered one of the oldest continuously inhabited cities in the world, with a history spanning over 3,000 years.</p>
+                </div>
+                
+                <div class="trivia-card">
+                    <div class="trivia-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Natural Beauty</h3>
+                    <p id="natureTrivia">India has 10 distinct biogeographic zones, from the snow-capped Himalayas to the tropical rainforests of the Western Ghats and the arid Thar Desert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Insights Section -->
+    <section class="insights-section">
+        <div class="container">
+            <h2 class="section-title">Local Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Best Time to Visit</h3>
+                    <p id="bestTimeInsight">The ideal time to visit varies by region. Generally, October to March offers pleasant weather across most of India.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h3>Local Cuisine</h3>
+                    <p id="cuisineInsight">Each region has its unique culinary traditions. From spicy curries in the south to rich Mughlai dishes in the north.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h3>Cultural Etiquette</h3>
+                    <p id="etiquetteInsight">Respect local customs, dress modestly at religious sites, and always remove shoes before entering temples.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h3>Transportation</h3>
+                    <p id="transportInsight">India has an extensive rail network, domestic flights, and local transport options including auto-rickshaws and metro systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Project Inscape</h3>
+                    <p>Discovering India's soul, one district at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="map.html">Interactive Map</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">North India</a></li>
+                        <li><a href="#">South India</a></li>
+                        <li><a href="#">East India</a></li>
+                        <li><a href="#">West India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Project Inscape. Made with ❤️ for India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/state.js"></script>
+</body>
+</html> 

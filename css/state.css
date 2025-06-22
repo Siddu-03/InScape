@@ -1,0 +1,407 @@
+/* ===== STATE PAGE STYLES ===== */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--indigo), var(--forest-green));
+    color: var(--white);
+    padding: var(--spacing-xxl) 0;
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--saffron);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+    color: var(--marigold);
+}
+
+.breadcrumb span {
+    color: var(--light-gray);
+}
+
+/* Filter Section */
+.filter-section {
+    background: var(--white);
+    padding: var(--spacing-xl) 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    align-items: end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.filter-select,
+.filter-input {
+    padding: var(--spacing-md);
+    border: 1px solid var(--light-gray);
+    border-radius: var(--radius-md);
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    transition: border-color var(--transition-fast);
+}
+
+.filter-select:focus,
+.filter-input:focus {
+    outline: none;
+    border-color: var(--saffron);
+    box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.1);
+}
+
+.clear-filters-btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--gray);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: 0.9rem;
+}
+
+.clear-filters-btn:hover {
+    background: var(--dark-gray);
+}
+
+/* Places Section */
+.places-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.places-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xxl);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.places-header h2 {
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.places-count {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
+}
+
+/* Place Cards */
+.place-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.place-card .card-image {
+    height: 200px;
+    position: relative;
+}
+
+.place-card .card-content {
+    padding: var(--spacing-lg);
+}
+
+.place-card .card-content h3 {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.place-card .card-content p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.place-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.place-tag {
+    background: var(--light-gray);
+    color: var(--dark-gray);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.place-tag.religious { background: #FFE4E1; color: #8B0000; }
+.place-tag.historical { background: #E6E6FA; color: #4B0082; }
+.place-tag.nature { background: #E0F7FA; color: #00695C; }
+.place-tag.adventure { background: #FFF3E0; color: #E65100; }
+.place-tag.food { background: #F3E5F5; color: #4A148C; }
+.place-tag.beach { background: #E1F5FE; color: #0277BD; }
+.place-tag.wildlife { background: #E8F5E8; color: #2E7D32; }
+.place-tag.heritage { background: #FFF8E1; color: #F57F17; }
+
+.place-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.place-btn {
+    flex: 1;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.place-btn.primary {
+    background: var(--indigo);
+    color: var(--white);
+}
+
+.place-btn.primary:hover {
+    background: var(--saffron);
+}
+
+.place-btn.secondary {
+    background: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+.place-btn.secondary:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+/* Loading Placeholder */
+.loading-placeholder {
+    text-align: center;
+    padding: var(--spacing-xxl);
+    color: var(--gray);
+}
+
+.loading-placeholder p {
+    margin-top: var(--spacing-md);
+    font-style: italic;
+}
+
+/* Load More Button */
+.load-more-container {
+    text-align: center;
+}
+
+.load-more-btn {
+    padding: var(--spacing-lg) var(--spacing-xxl);
+    background: var(--saffron);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.load-more-btn:hover {
+    background: var(--marigold);
+    transform: translateY(-2px);
+}
+
+/* Cultural Trivia Section */
+.trivia-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.trivia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xxl);
+}
+
+.trivia-card {
+    background: var(--light-gray);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border-left: 4px solid transparent;
+}
+
+.trivia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--saffron);
+}
+
+.trivia-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-lg);
+    background: linear-gradient(135deg, var(--saffron), var(--marigold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.trivia-card h3 {
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+}
+
+.trivia-card p {
+    color: var(--gray);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Local Insights Section */
+.insights-section {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(135deg, var(--indigo), var(--forest-green));
+    color: var(--white);
+}
+
+.insights-section .section-title {
+    color: var(--white);
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xxl);
+}
+
+.insight-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-normal);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.insight-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.insight-card h3 {
+    color: var(--saffron);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+}
+
+.insight-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for State Page */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        min-width: auto;
+    }
+    
+    .places-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .places-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .trivia-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .insights-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .place-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .place-card .card-content {
+        padding: var(--spacing-md);
+    }
+    
+    .trivia-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .insight-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .place-tags {
+        gap: var(--spacing-xs);
+    }
+    
+    .place-tag {
+        font-size: 0.7rem;
+        padding: var(--spacing-xs);
+    }
+} 
