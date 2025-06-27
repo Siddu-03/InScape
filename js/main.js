@@ -5,6 +5,11 @@ let currentState = null;
 let currentDistrict = null;
 let searchTimeout = null;
 
+// Global variables for search pagination
+let currentSearchQuery = '';
+let currentSearchOffset = 0;
+let currentSearchResults = [];
+
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
@@ -142,14 +147,19 @@ function initializeSearch() {
 }
 
 // Perform search using API
-async function performSearch(query) {
+async function performSearch(query, offset = 0) {
     try {
         const searchResults = document.querySelector('.search-results');
         if (!searchResults) return;
         
         // Show loading
-        searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
-        searchResults.style.display = 'block';
+        if (offset === 0) {
+            searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
+            searchResults.style.display = 'block';
+            currentSearchQuery = query;
+            currentSearchOffset = 0;
+            currentSearchResults = [];
+        }
         
         // Check if API is available
         if (typeof api === 'undefined') {
@@ -158,12 +168,23 @@ async function performSearch(query) {
         }
         
         // Call API
-        const response = await api.search(query, 'all', 10, 0);
+        const response = await api.search(query, 'all', 50, offset);
         
         if (response.success && response.data.length > 0) {
-            displaySearchResults(response.data);
+            if (offset === 0) {
+                // First search - replace results
+                currentSearchResults = response.data;
+                displaySearchResults(response.data, response.pagination);
+            } else {
+                // Load more - append results
+                currentSearchResults = currentSearchResults.concat(response.data);
+                displaySearchResults(currentSearchResults, response.pagination);
+            }
+            currentSearchOffset = offset + response.data.length;
         } else {
-            searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            if (offset === 0) {
+                searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            }
         }
     } catch (error) {
         console.error('Search error:', error);
@@ -174,8 +195,15 @@ async function performSearch(query) {
     }
 }
 
+// Load more search results
+function loadMoreSearchResults() {
+    if (currentSearchQuery) {
+        performSearch(currentSearchQuery, currentSearchOffset);
+    }
+}
+
 // Display search results
-function displaySearchResults(results) {
+function displaySearchResults(results, pagination = null) {
     const searchResults = document.querySelector('.search-results');
     if (!searchResults) return;
     
@@ -195,6 +223,17 @@ function displaySearchResults(results) {
             </div>
         `;
     });
+    
+    // Add "Show More" button if there are more results
+    if (pagination && pagination.has_more) {
+        html += `
+            <div class="search-show-more">
+                <button class="show-more-btn" onclick="loadMoreSearchResults()">
+                    Show More Results (${pagination.total - results.length} more)
+                </button>
+            </div>
+        `;
+    }
     
     searchResults.innerHTML = html;
     

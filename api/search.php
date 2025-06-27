@@ -4,6 +4,10 @@ require_once 'config.php';
 // Set CORS headers
 setCORSHeaders();
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 try {
     $pdo = getDBConnection();
     
@@ -12,6 +16,9 @@ try {
     $type = $_GET['type'] ?? 'all'; // all, states, districts, places
     $limit = (int)($_GET['limit'] ?? 20);
     $offset = (int)($_GET['offset'] ?? 0);
+    
+    // Debug logging
+    error_log("Search API called with: q='$q', type='$type', limit=$limit, offset=$offset");
     
     // Validate required parameters
     if (empty($q)) {
@@ -39,6 +46,8 @@ try {
         $stateStmt->execute([':search' => "%$q%", ':limit' => $limit]);
         $stateResults = $stateStmt->fetchAll();
         $results = array_merge($results, $stateResults);
+        
+        error_log("States found: " . count($stateResults));
     }
     
     // Search districts
@@ -63,6 +72,8 @@ try {
         $districtStmt->execute([':search' => "%$q%", ':limit' => $limit]);
         $districtResults = $districtStmt->fetchAll();
         $results = array_merge($results, $districtResults);
+        
+        error_log("Districts found: " . count($districtResults));
     }
     
     // Search places
@@ -92,6 +103,8 @@ try {
         $placeStmt->execute([':search' => "%$q%", ':limit' => $limit]);
         $placeResults = $placeStmt->fetchAll();
         $results = array_merge($results, $placeResults);
+        
+        error_log("Places found: " . count($placeResults));
     }
     
     // Sort results by relevance (exact matches first, then partial matches)
@@ -109,6 +122,8 @@ try {
     $totalResults = count($results);
     $results = array_slice($results, $offset, $limit);
     
+    error_log("Total results before pagination: $totalResults, After pagination: " . count($results));
+    
     // Send response
     sendJSONResponse([
         'success' => true,
@@ -124,6 +139,7 @@ try {
     ]);
     
 } catch (Exception $e) {
+    error_log("Search API error: " . $e->getMessage());
     sendJSONResponse(['error' => 'Search failed: ' . $e->getMessage()], 500);
 }
 ?> 

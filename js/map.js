@@ -5,6 +5,11 @@ let currentZoom = 1;
 let selectedStateId = null;
 let statesData = [];
 
+// Global variables for search pagination
+let currentSearchQuery = '';
+let currentSearchOffset = 0;
+let currentSearchResults = [];
+
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Only initialize map functionality if we're on the map page
@@ -431,8 +436,8 @@ function initializeMapSearch() {
 }
 
 // Perform map search
-async function performMapSearch(query) {
-    console.log('Performing map search for:', query); // Debug log
+async function performMapSearch(query, offset = 0) {
+    console.log('Performing map search for:', query, 'offset:', offset); // Debug log
     
     try {
         const searchResults = document.querySelector('.map-search-container .search-results');
@@ -442,8 +447,13 @@ async function performMapSearch(query) {
         }
         
         // Show loading
-        searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
-        searchResults.style.display = 'block';
+        if (offset === 0) {
+            searchResults.innerHTML = '<div class="search-loading">Searching...</div>';
+            searchResults.style.display = 'block';
+            currentSearchQuery = query;
+            currentSearchOffset = 0;
+            currentSearchResults = [];
+        }
         
         // Check if API is available
         if (typeof api === 'undefined') {
@@ -455,14 +465,25 @@ async function performMapSearch(query) {
         console.log('Calling API search...'); // Debug log
         
         // Call API
-        const response = await api.search(query, 'all', 10, 0);
+        const response = await api.search(query, 'all', 50, offset);
         
         console.log('API response:', response); // Debug log
         
         if (response.success && response.data.length > 0) {
-            displayMapSearchResults(response.data);
+            if (offset === 0) {
+                // First search - replace results
+                currentSearchResults = response.data;
+                displayMapSearchResults(response.data, response.pagination);
+            } else {
+                // Load more - append results
+                currentSearchResults = currentSearchResults.concat(response.data);
+                displayMapSearchResults(currentSearchResults, response.pagination);
+            }
+            currentSearchOffset = offset + response.data.length;
         } else {
-            searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            if (offset === 0) {
+                searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            }
         }
     } catch (error) {
         console.error('Map search error:', error);
@@ -473,8 +494,15 @@ async function performMapSearch(query) {
     }
 }
 
+// Load more search results
+function loadMoreSearchResults() {
+    if (currentSearchQuery) {
+        performMapSearch(currentSearchQuery, currentSearchOffset);
+    }
+}
+
 // Display map search results
-function displayMapSearchResults(results) {
+function displayMapSearchResults(results, pagination = null) {
     console.log('Displaying map search results:', results); // Debug log
     
     const searchResults = document.querySelector('.map-search-container .search-results');
@@ -496,6 +524,17 @@ function displayMapSearchResults(results) {
             </div>
         `;
     });
+    
+    // Add "Show More" button if there are more results
+    if (pagination && pagination.has_more) {
+        html += `
+            <div class="search-show-more">
+                <button class="show-more-btn" onclick="loadMoreSearchResults()">
+                    Show More Results (${pagination.total - results.length} more)
+                </button>
+            </div>
+        `;
+    }
     
     searchResults.innerHTML = html;
     

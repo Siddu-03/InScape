@@ -276,6 +276,98 @@ a:hover {
     border-bottom: none;
 }
 
+/* Search Results */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    margin-top: var(--spacing-sm);
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: var(--light-gray);
+}
+
+.search-result-icon {
+    font-size: 1.2rem;
+    margin-right: var(--spacing-md);
+    width: 30px;
+    text-align: center;
+}
+
+.search-result-content {
+    flex: 1;
+}
+
+.search-result-title {
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-xs);
+}
+
+.search-result-subtitle {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.search-loading,
+.search-no-results,
+.search-error {
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.search-error {
+    color: var(--error);
+}
+
+/* Show More Button */
+.search-show-more {
+    padding: var(--spacing-md);
+    text-align: center;
+    border-top: 1px solid var(--light-gray);
+}
+
+.show-more-btn {
+    background: var(--indigo);
+    color: var(--white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.show-more-btn:hover {
+    background: var(--forest-green);
+    transform: translateY(-1px);
+}
+
 /* Cards */
 .card {
     background: var(--white);
